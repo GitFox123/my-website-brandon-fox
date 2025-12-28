@@ -1,0 +1,485 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-size: cover;
+    background-color: white;
+}
+
+.contact{
+    float:left;
+    background-color: rgb(226, 223, 255);
+    height: 65px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1028px){
+.contact{
+    background-color: rgb(226, 223, 255);
+    width: fit-content;
+    }
+}
+
+.contact i{
+    padding: 16px;
+    color:black;
+}
+
+.contact i:hover{
+    background-color:rgb(241, 234, 255);
+    color:black;
+    border-radius: 10px;
+}
+
+button{
+    background-color: rgb(226, 223, 255);
+    border-width: 0px;
+    border-radius: 10px;
+    width: 150px;
+    margin-top:6.5px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+@media screen and (max-width: 1018px){
+    button{
+        margin:7px 10px 7px 4px;
+    }
+}
+
+button:hover{
+    font-weight: 600;
+}
+
+#navbar ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    float:right;
+}
+
+#navbar li{
+    display: inline-block;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom:0px;
+    text-transform: lowercase;
+    font-family: 'Arial';
+    font-size: 24px;
+}
+
+#navbar a{
+    text-decoration: none; 
+    padding-bottom: 15px;
+}
+
+#navbar a:hover{
+    width: 100px;
+    font-weight: 600;
+    padding-bottom:0px;
+}
+
+.sticky{
+    background-color:aliceblue;
+    position:fixed;
+    top: 0;
+    width: 98.75%;
+    border-radius: 10px;
+    margin-top: 5px;
+    z-index: 100; 
+}
+
+@media screen and (max-width:1030px){
+    .sticky{
+        width:97.85%;
+    }
+}
+
+.sticky::after{
+    content: "";
+    display:table;
+    clear: both;
+}
+
+.active{
+    background-color:rgb(241, 234, 255);
+    width: 125px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.active a{
+    line-height:50px;
+    margin-bottom:10px;
+}
+
+.active a:hover{
+    background-color: rgb(241, 234, 255);
+    padding-bottom:3px;
+}
+
+.me{
+    max-width:60%;
+    width:290px;
+    height:fit-content;
+    border-radius:10px;
+    margin-left: 200px;
+    margin-top: 20px;
+    float:left;
+    box-shadow: 8px 10px 13px black;
+    position:relative; top:0px
+}
+
+@media screen and (max-width:700px){
+    .me{
+      position:relative; top:360px; right:280px;
+    }
+}
+
+.main{
+    padding-top:50px;
+    margin-right:120px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    color: black;
+    font-family:'Arial';
+}
+
+.main h1{
+    font-size: 50px;
+    line-height: 0px;
+    text-align: center;
+    position:relative; left:-17px; top:10px;
+}
+
+@media screen and (max-width: 1200px){
+    .main h1{
+        line-height:50px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .main h1{
+        margin-left: 260px;
+        line-height: 50px;
+        align-items: center;
+        position: relative; bottom:300px; right:16px;
+        font-size:46px;
+        float:left;
+    }
+}
+
+.main h2{
+    text-align: center;
+    margin-bottom:30px;
+    margin-left:20px;
+    margin-right:20px;
+    padding-left:240px;
+    padding-right:240px;
+    line-height: 35px;
+    font-size: 21px;
+    position:relative; left:115px; top:15px;
+}
+
+.main h4{
+    text-align: center;
+    font-weight:lighter;
+    margin:2px;
+    padding-left:190px;
+    padding-right:190px;
+    padding-top:3px;
+    padding-bottom:15px;
+    line-height:27px;
+    position:relative; left:85px; top:-10px;
+}
+
+@media screen and (max-width: 1200px){
+    .main h2{
+        position: relative; bottom:20px;
+    }
+    }    
+
+@media screen and (max-width: 700px){
+.main h2{
+    text-align: center;
+    margin-left: 282px;
+    margin-top: 0px;
+    float:left;
+    position:relative; bottom:230px;
+}
+}
+
+.interests{
+    font-weight:bold;
+}
+
+#about{
+    font-family: 'Arial';
+    margin-top: 205px;
+    margin-bottom: 100px;
+    position:relative; left:110px;
+}
+
+#about h2{
+    font-size: 26px;
+    margin-left: 560px;
+    color: black;
+}
+
+#about p{
+    text-align: center;
+    font-size: 16px;
+    width: 970px;
+    line-height: 35px;
+    margin-left: 150px;
+    color: black;
+}
+
+@media screen and (max-width: 1000px){
+    #about h2, #about p{
+        position:relative; bottom:150px;right:180px;
+    }
+}
+
+#projects{
+    font-family: 'Arial';
+}
+
+#projects h2{
+    font-size: 26px;
+    margin-left: 540px;
+    color: black;
+}
+
+@media screen and (max-width: 1000px){
+    #projects h2{
+        position:relative; left:140px;
+    }
+}
+
+.first-project-image{
+    background-color: aliceblue;
+    width:fit-content;
+    color: white;
+    border-radius: 10px;
+    width: 610px;
+    height: 450px;
+    margin-left:15px;
+}
+
+.first-project-image h3{
+    margin-left: 67px;
+    margin-right: 95px;
+    margin-bottom:10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 450px;
+    text-align: center;
+    width:fit-content;
+    color: black;
+    border-radius: 10px;
+    line-height: 30px;
+    font-size:22px;
+    text-decoration: underline;
+}
+
+.first-project-image img{
+    width: 400px;
+    height: fit-content;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 90px;
+    margin-right: 400px;
+    padding-top:2px;
+    border-radius: 10px;
+}
+
+.first-project-image h4{
+    margin-top: 3px;
+    margin-left: 70px;
+    width: 450px;
+    text-align: center;
+    font-size: large;
+    color: black;
+}
+
+.first-project-text{
+    background-color: aliceblue;
+    color: black;
+    border-radius:10px;
+    width: 610px;
+    margin-left:15px;
+    margin-top: 20px;
+}
+
+.first-project-text p{
+    padding-left:20px;
+    padding-right:15px;
+    padding-top: 7px;
+    line-height: 30px;
+}
+
+.first-project-text ul{
+    padding-bottom: 12px;
+}
+
+.first-project-text li{
+    line-height: 25px;
+    font-size: 14.75px;
+}
+
+.see-more{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10px;
+    margin-left:840px;
+    padding-top: 10px;
+    width: 250px;
+    height: 40px;
+    font-size:28px;
+    font-family: 'Arial';
+    text-align: center;
+    position: relative; bottom: 382px;
+    transition: all 60ms ease-in-out;
+}
+
+@media screen and (max-width: 1110px){
+   .see-more{
+        position:relative;right:140px;
+    }
+}
+
+.second-project-image{
+    background-color: aliceblue;
+    width:fit-content;
+    color: white;
+    border-radius: 10px;
+    width: 610px;
+    height: 415px;
+    margin-left:15px;
+}
+
+.second-project-image h3{
+    margin-left: 72px;
+    margin-right: 95px;
+    margin-bottom:10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 450px;
+    text-align: center;
+    width:fit-content;
+    color: black;
+    border-radius: 10px;
+    line-height: 30px;
+    font-size:22px;
+    text-decoration: underline;
+}
+
+.second-project-image img{
+    width: 400px;
+    height: fit-content;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 90px;
+    margin-right: 400px;
+    padding-top:2px;
+    border-radius: 10px;
+}
+
+.second-project-image h4{
+    margin-top: 3px;
+    margin-left: 70px;
+    width: 450px;
+    text-align: center;
+    font-size: large;
+    color: black;
+}
+
+.second-project-text{
+    background-color: aliceblue;
+    color: black;
+    border-radius:10px;
+    width: 610px;
+    margin-left:15px;
+    margin-top: 20px;
+}
+
+.second-project-text p{
+    padding-left:20px;
+    padding-right:15px;
+    padding-top: 7px;
+    line-height: 30px;
+}
+
+.second-project-text ul{
+    padding-bottom: 12px;
+}
+
+.second-project-text li{
+    line-height: 25px;
+    font-size: 14.75px;
+}
+
+.coming-soon{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10px;
+    margin-left:840px;
+    padding-top: 10px;
+    width: 250px;
+    height: 80px;
+    font-size:28px;
+    font-family: 'Arial';
+    text-align: center;
+    position: relative; bottom: 382px;
+    transition: all 60ms ease-in-out;
+}
+
+@media screen and (max-width: 1110px){
+   .coming-soon{
+        position:relative;right:140px;
+    }
+}
+
+#references{
+    font-family: 'Arial';
+}
+
+#references h2{
+    font-size: 26px;
+    margin-right: 0px;
+    text-align: center;
+    color: black;
+}
+
+#references ol li{
+    line-height: 25px;
+}
+
+footer{
+    margin-top: 20px;
+}
+
+footer img{
+    width: 500px;
+    height: fit-content;
+    margin-left: 355px;
+}
+
+@media screen and (max-width: 1200px){
+    footer img{
+        position:relative; right:400px;
+    }
+}
+
+footer h5{
+    position: relative; right: 5px; bottom: 10px;
+    text-align: center;
+    font-family: 'Arial';
+    color: black;
+}

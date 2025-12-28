@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="tab icon logo" href="gogrow-logo.JPG" type="image/icon/logo">
+<link rel="stylesheet" href="main_page_stylesheet.css">
+<link rel="stylesheet" media="screen and (max-width: 700px)" type="text/css" href="mobile_device.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<title>Brandon Fox</title>
+</head>
+<body>
+    <header class="sticky scrolling" data-aos="fade-up">
+        <section class="contact">
+          <a href="mailto:brandonmfox@gmail.com"><i class="fa-regular fa-envelope fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/brandon-fox-25879515a/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        </section>
+        <nav id="navbar" style="background-color:aliceblue;">
+        <ul>
+            <button onclick="go('#home')"><li class="links active"><a name="target" style="color: black">Home</a></li></button>
+            <button onclick="go('#about')"><li class="links active"><a name="target" style="color: black">About</a></li></button>
+            <button onclick="go('#projects')"><li class="links active"><a style="color: black">Projects</a></li></button>
+            <button onclick="go('#references')"><li class="links active"><a style="color: black">References</a></li></button>
+            <button onclick="résumé(); return false;"><li><a href="javascript:void(0)" style="color: black">Résumé</a></li></button>
+        </ul>
+        </nav>
+    </header>
+    <img src="photo-of-me-brandon-fox.jpg" class= "me" alt="pic of me">
+    <div class= "main" data-aos="fade-down">
+        <h1>Brandon Fox</h1>
+        <h2>Master's Student in Mathematics @ UAlbany | Potential PhD Student (2026) | BS Degree in Mathematics @ SUNY New Paltz</h2>
+        <h4><u><span class="interests">Interests</u>:</span> differential equations, eigenvalues & eigenvectors, classical diffusion PDE, anisotropic (Perona-Malik) diffusion, 
+        Perona-Malik paradox, spectral theory, harmonic analysis, differential geometry, image processing, machine learning (ML), teaching in undergraduate-level math</h4>
+    </div>
+    <section id="about" data-aos="fade-up">
+        <h2><u>About Me</u></h2>
+        <p>
+           My name is <b>Brandon Fox</b>. I'm a graduate student enrolled in the <b>Master of Arts in Mathematics program</b> at UAlbany, with a <b>current GPA of 3.93</b>. My plan upon graduating with my 
+           <b>Master's degree</b> this Spring semester is to continue at UAlbany in the <b>PhD in Mathematics program</b> this Fall semester. 
+           <br>
+           </br>
+           My credential includes a Bachelor of Science degree in Mathematics from SUNY New Paltz, where I had <b>graduated <i>summa cum laude</i> with a 3.9 GPA</b>. There, I had done research work in 
+           <b>image processing and partial differential equations (PDEs) with MATLAB programming (see projects for more information)</b>.
+           <br>
+           </br>
+           My research interest in mathematics lies at the <b>intersection of differential equations</b> and other topics, specifically <b>eigenvalues and eigenvectors</b>. Other research interests include the 
+           <b>mathematical theory behind the classical diffusion PDE</b>, <b>anisotropic (Perona-Malik) diffusion</b>, and the <b>Perona-Malik paradox</b>. I plan to further my research in fields such as <b>spectral theory</b>, 
+           <b>harmonic analysis</b>, <b>differential geometry</b>, <b>image processing</b>, and <b>machine learning</b> during my time in the PhD program at Albany and while I am gaining further teaching experience 
+           at a small college upon completion of the program. My end goal is to become a <b>very strong and renowned research mathematician</b> and <b>full-time professor for undergraduates at a university</b>.
+           <br>
+           </br>
+           My work history primarily includes having <b>provided tutoring services for students working in high school and low-college level mathematics</b>.
+           Areas in mathematics where I have helped out my clients were in <b>high school algebra</b>, <b>geometry</b>, <b>trigonometry</b>, <b></b>college algebra</b>, 
+           <b>pre-calculus</b>, <b>calculus (differential, integral, and multivariable)</b>, and <b>introductory proof-writing</b>.
+           <br>
+           </br>
+           Things that I like to do outside of work are traveling to new places, cooking, doing puzzles (e.g., Connections from the NY Times, sudoku), 
+           archery, playing piano and backgammon, creating art skecthes, and spending time with my family.
+           <br>
+           </br>
+           <b>See my LinkedIn profile and résumé for more information about me.</b>
+           <br>
+           </br>
+           <b>Enjoy the rest of my website!</b>
+        </p>
+    </section>
+    <section id="projects" data-aos="fade-up">
+        <h2><u>My Projects</u></h2>
+        <div class="first-project-image">
+        <h3>Image Processing with MATLAB and Partial Differential Equations (PDEs)</h3>
+        <a href="Brandon Fox Fall2021 Research.pdf"><img src="two-dim-diffusion-with-image-applied.jpg" alt="pic of preview"></a>
+        <h4>Click on the picture to learn more about this project.</h4>
+        </div>
+        <div class="first-project-text" data-aos="fade-right">
+            <p>
+                <b><u>Description</u>: The main objective of this project was to be able to utilize specific MATLAB programming and knowledge of 
+                partial differential equations (PDEs) towards denoising images that have been corrupted by Gaussian noise. The primary PDE that was 
+                focused for this project was the diffusion/heat PDE, <i>u<sub>t</sub> = ku<sub>xx</sub></i>, such that <i>k</i> is the diffusion coefficient
+                (this was set to equal 1 throughout the project), with Neumann and Dirichlet boundary conditions, where these boundary conditions 
+                become specialized image denoising conditions when a general solution for the PDE is found at some <i>t</i> > 0 time.</b>
+            </p>
+        <ul>
+            <li>With Dr. Jeungeun Park of SUNY New Paltz</li>
+            <li>Original image obtained from Hanayo Sora (@SoraHanayo) from Twitter</li>
+            <li>Project signed and approved in December 2021 by SUNY New Paltz Dept. Chairperson, Dr. David Hobby</li>
+        </ul>
+        </div>
+        <div class="see-more" data-aos="fade-down-left">
+            <b>See More Below!</b>
+          </div>
+        <div class="second-project-image" data-aos="fade-up">
+            <h3>Projects in Image Classification with Convolutional Neural Networks (CNNs)</h3>
+            <a href="https://github.com/GitFox123/-Machine-Learning-with-ChatGPT-Image-Classification-Model-Projects-Brandon-Fox-"><img src="cnn-model-structure.png" alt="pic of preview"></a>
+            <h4>Click on the picture to learn more about this project.</h4>
+        </div>
+        <div class="second-project-text" data-aos="fade-right">
+            <p>
+                <b><u>Description</u>: Used ChatGPT prompts to put forth how Convolutional Neural Network (CNN) models, as well as the technique of
+                supervised learning work. The CNN models were trained to autonomously classify images from the Modified National Institute of 
+                Standards and Technology (MNIST) dataset. Overall, the projects helped to implement the general process of how Artificial Neural Network
+                (ANN) models are built, trained, validated, and tested.</b>
+            </p>
+        <ul>
+            <li><b><u>Tools and Technologies Used</u>: Python, TensorFlow, Keras, NumPy, Matplotlib, scikit-learn, Seaborn, GitHub</b></li>
+            <li>Projects completed under Coursera project entitled, "Machine Learning with ChatGPT: Image Classification Model"</li>
+        </ul>
+        </div>
+          <div class="coming-soon" data-aos="fade-down-left">
+           <b>More Coming Soon!</b>
+         </div>
+        </div>
+    </section>
+    <section id="references" data-aos="fade-up">
+        <h2><u>References</u></h2>
+        <ol>
+            <li><u>Dr. D. Hobby's SUNY New Paltz Profile</u>: https://webapps.newpaltz.edu/directory/profile/davidhobby</li>
+            <li><u>Dr. J. Park's Website</u>: https://sites.google.com/site/jepark0915/home?authuser=0</li>
+            <li><u>Hanayo Sora's Twitter (@SoraHanayo)</u>: https://twitter.com/SoraHanayo?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor</li>
+        </ol>
+    </section>
+<hr>
+</hr>
+<footer data-aos="fade-right">
+    <img src="website-footer-image-brandon-fox.png" alt="alternative banner pic of logo with no background">
+    <h5>Responsive, animated website created with HTML, CSS3, and JavaScript</h5>
+</footer>
+
+<!--JavaScript Code-->
+<script type="text/javascript">
+    /*Loading in (or installing) the AOS (Animate On Scroll) library and setting scrolling animation 
+    properties.*/
+    AOS.init({
+        duration: 700,
+    }); 
+
+    function résumé(){
+        window.open("brandon-fox-resume.pdf");
+    }
+
+    function activeness(){
+        let length = sections.length;
+        while((length--) && (window.scrollY + 456 < sections[length].offsetTop)){}
+            links.forEach((links) => links.classList.remove("active"));
+            links[length].classList.add("active");
+    }
+
+    function go(id){
+        let loc = document.querySelector(id);
+        let y = loc.offsetTop - 90;
+        window.scrollTo({
+            top: y
+        });
+    }
+    
+    const links = document.querySelectorAll(".links");
+    const sections = document.querySelectorAll("section");
+
+    activeness();
+    window.addEventListener("scroll", activeness);
+   </script>
+<!--End of JavaScript Code-->
+
+<!--Fade-in transition upon (re)entry into the website-->
+<style>
+    a,.me,.main,.fa-envelope,.fa-brands{
+        animation: fadeIn ease-in 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeIn{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+</style>
+</body>
+</html>
